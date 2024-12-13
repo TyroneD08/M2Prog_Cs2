@@ -121,5 +121,53 @@ namespace functions
             int random =  . . . ;
             return GetVraag(random);
         }
-    }
+
+
+        static void Main(string[] args)
+        {
+            Run();
+        }
+
+        static void Run()
+        {
+           
+            AskRandomQuestion();
+            AskRandomQuestion();
+            AskRandomQuestion();
+            AskRandomQuestion();
+        }
+
+        static void AskRandomQuestion()
+        {
+         
+            string question = GetRandomVraag();
+
+           
+            Console.WriteLine("Vraag: " + question);
+
+            Console.Write("Antwoord: ");
+            string answer = Console.ReadLine();
+
+         
+            Console.WriteLine("Je antwoord was: " + answer);
+            Console.WriteLine();
+        }
+
+        static string GetRandomVraag()
+        {
+         
+            string[] vragen = {
+            "Wat is je favoriete kleur?",
+            "Wat is je favoriete dier?",
+            "Wat is je droom baan?",
+            "Wat is je favoriete eten?"
+        };
+
+
+            Random random = new Random();
+            int index = random.Next(vragen.Length);
+
+        
+            return vragen[index];
+        }
 }
