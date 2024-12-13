@@ -12,6 +12,15 @@ namespace functions
             program.Run();
 
         }
+
+        string[] vragen = new string[] {
+            "what arcade game was called Puckman in Japan?",
+            "What 1997 N64 video game features James Bond and is named after the 1995 film?"
+        };
+
+
+
+
         //Program
 
         internal void Run()
@@ -21,13 +30,12 @@ namespace functions
             Vraag7();
         }
 
-        internal void Vraag7()
-        {
-
+        internal string Vraag7()
+        { 
             Console.WriteLine("How long do you think you'd survive in a zombie apocalypse?");
             string antwoord = Console.ReadLine();
 
-            Console.WriteLine(antwoord);
+            return antwoord;
         }
 
 
@@ -98,5 +106,20 @@ namespace functions
             Console.WriteLine(antwoord);
         }
 
+        internal string GetVraag(int VraagIndex)
+        {
+
+            return vragen[VraagIndex];
+        }
+
+        string vraag0 = GetVraag(0);
+
+
+        internal string GetRandomvraag()
+        {
+
+            int random =  . . . ;
+            return GetVraag(random);
+        }
     }
 }
