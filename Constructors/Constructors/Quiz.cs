@@ -4,17 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RijSchool
+namespace Constructors
 {
-    internal class Dag
+     class Quiz
     {
-        internal DateTime datum;
-        internal LesUur[] lesuren;
-
+        internal QuizVraag[] vragen;
+        internal QuizVraagAntwoord[] ingevuldeAntwoorden;
     }
 
     
 
+
 }
-
-

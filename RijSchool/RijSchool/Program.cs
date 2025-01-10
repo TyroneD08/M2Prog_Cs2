@@ -83,6 +83,15 @@ namespace RijSchool
                 afnameDatum = DateTime.Now,
             };
 
+            Dag dag = new Dag()
+            {
+
+                datum = new DateTime(
+                lesuren = 3,
+
+
+            };
+     
 
     }
 }
