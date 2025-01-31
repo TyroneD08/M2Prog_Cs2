@@ -18,13 +18,14 @@ namespace Constructors
 
     internal QuizVraag
 
-        (string vraag, string antwoord)
+}
+(string vraag, string antwoord) 
     {
 
-        this.vraag = vraag;
-        this.antwoord = antwoord
+   this.vraag = vraag;
+    this.antwoord = antwoord
     }
-
+    
 
 }
 

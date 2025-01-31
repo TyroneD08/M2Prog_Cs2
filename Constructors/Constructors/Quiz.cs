@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Constructors
 {
-    class Quiz
+     class Quiz
     {
         private List<QuizVraag> vragen;
         private List<QuizVraagAntwoord> ingevuldeAntwoorden;
@@ -99,7 +99,7 @@ namespace Constructors
             quiz.VoegVraagToeOpIndex(0, new QuizVraag("Wat is de hoofdstad van Nederland?", "Amsterdam"));
             quiz.VoegVraagToeOpIndex(1, "Wat is 2 + 2?", "4");
             quiz.VoegVraagToeOpIndex(3, "Hoeveel dagen heeft een week?", "7");
-           
+    
 
             // Loop alle vragen door en stel ze
             for (int i = 0; i < 10; i++)
